@@ -34,7 +34,7 @@ function disassemble(data, roundtrip) {
 }
 
 function assemble(source) {
-    source = source.replace('\t', ' ').replace(/\r\n/g,'\n') + '\n';
+    source = source.replace('\t', ' ').replace(/\r\n/g,'\n') + '\n'
     return [...parse.assemble(source)]
 }
 
